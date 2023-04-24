@@ -89,11 +89,11 @@ export const handler: ServerlessFunctionSignature<MyContext, MyEvent> =
           RecordingSid: event.RecordingSid,
           Participants: JSON.stringify([
             {
-              channel: 1,
+              channel: 2,
               type: "customer",
             },
             {
-              channel: 2,
+              channel: 1,
               type: "agent",
             },
           ]),
